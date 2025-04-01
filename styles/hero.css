@@ -1,13 +1,13 @@
 section.hero {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    overflow: hidden;
-
     max-width: 80rem;
     width: 100%;
     padding: 2.5rem 2rem;
     margin-inline: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
 
     & h1 {
         max-width: 40rem;
@@ -81,7 +81,7 @@ section.hero {
         }
     }
 
-    &>div:nth-child(2) {
+    & > div:nth-child(2) {
         display: block;
         width: 100%;
         max-width: 30.5rem;
@@ -99,7 +99,7 @@ section.hero {
             width: 100%;
         }
 
-        & img[src*"ellipse"] {
+        & img[src*='ellipse'] {
             width: 94%;
             top: 3%;
             left: 3%;
@@ -108,31 +108,30 @@ section.hero {
             animation: slideIn 3s 200ms ease forwards;
         }
 
-        & img[src*"patins"] {
+        & img[src*='patins'] {
             z-index: 1;
 
             transform: translateX(200%);
             animation: slideIn 3s ease forwards;
         }
 
-        & img[src*"starts-1"] {
+         & img[src*='stars-1'] {
             max-width: 5.5rem;
             top: 30%;
             z-index: 0;
 
             opacity: 0;
             transform: translateX(400%);
-            animation: slideIn 2s 800ms ease both, apper 100ms 800ms both;
+            animation: slideIn 2s 800ms ease forwards, appear 100ms 800ms forwards;
         }
-
-        & img[src*"starts-2"] {
+        
+        & img[src*='stars-2'] {
             max-width: 2.5rem;
             right: 0;
             bottom: 35%;
 
             transform: translateX(400%);
-            animation: slideIn 2s 800ms ease both;
-
+            animation: slideIn 2.2s 800ms ease forwards;
         }
     }
 }
@@ -170,7 +169,7 @@ section.hero {
     }
 
     29% {
-        transform: translateY(calc(-5rem - 5px));
+        transform: translateY(calc(-5rem + 5px));
     }
 
     33%, 55% {
@@ -190,7 +189,7 @@ section.hero {
     }
 
     62% {
-        transform: translateY(calc(-10rem - 5px));
+        transform: translateY(calc(-10rem + 5px));
     }
 
     66%, 88% {
@@ -210,7 +209,7 @@ section.hero {
     }
 
     95% {
-        transform: translateY(calc(-15rem - 5px));
+        transform: translateY(calc(-15rem + 5px));
     }
 
     100% {
