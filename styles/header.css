@@ -2,6 +2,7 @@ nav {
     max-width: 80rem;
     width: 100%;
     padding: 1.25rem 2rem;
+    margin-inline: auto;
 
     display: flex;
     align-items: center;
@@ -15,11 +16,11 @@ nav {
     }
 
     & img[src*="logo"]:hover {
-        transform: rotate(90deg)
+        transform: rotate(90deg);
     }
 
     & img[src*="shopping"]:hover {
-        transform: rotate(-30deg)
+        transform: rotate(-30deg);
     }
 
     & a {
