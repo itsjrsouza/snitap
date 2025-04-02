@@ -2,7 +2,8 @@
 
 <p align="center">
 Programa de formação em FullStack promovido pela Rocketseat!
-<a href="https://www.rocketseat.com.br/formacao/fullstack?utm_source=google&utm_medium=cpc&utm_campaign=venda&utm_term=perpetuo&utm_content=publicofrio-venda-formacao_fullstack-texto-venda-kw-none-none-fullstack-sitelink-none-br-search&gad_source=1&gclid=Cj0KCQjw7dm-BhCoARIsALFk4v_G-ieHaC--a0VGvdyVlTsjDcLd0QYNnBs1-ZYDjZch25NgDo2Hw0gaAkBgEALw_wcB">Estude essa trilha e muitas outras clicando aqui.</a>
+<a href="https://www.rocketseat.com.br/formacao/fullstack?utm_source=google&utm_medium=cpc&utm_campaign=venda&utm_term=perpetuo&utm_content=publicofrio-venda-formacao_fullstack-texto-venda-kw-none-none-fullstack-sitelink-none-br-search&gad_source=1&gclid=Cj0KCQjw7dm-BhCoARIsALFk4v_G-ieHaC--a0VGvdyVlTsjDcLd0QYNnBs1-ZYDjZch25NgDo2Hw0gaAkBgEALw_wcB">
+  Estude essa trilha e muitas outras clicando aqui.</a>
 </p>
 
 <p align="center">
