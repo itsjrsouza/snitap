@@ -5,9 +5,17 @@ section.hero {
     margin-inline: auto;
 
     display: flex;
+    flex-direction: column-reverse;
     align-items: center;
-    justify-content: space-between;
     overflow: hidden;
+
+    & > div:nth-child(1) {
+        display: flex;
+        flex-direction: column;
+
+        max-width: 19.5rem;
+    }
+
 
     & h1 {
         max-width: 40rem;
@@ -16,9 +24,9 @@ section.hero {
     & h1 div {
         display: inline-block;
         overflow: hidden;
-        height: 5rem;
+        height: 2rem;
         width: min-content;
-        vertical-align:  bottom;
+        vertical-align: top;
     }
 
     & h1 span {
@@ -44,6 +52,8 @@ section.hero {
         display: flex;
         gap: 2rem;
         margin-top: 3rem;
+        flex-direction: column-reverse;
+
 
         & .button {
             display: flex;
@@ -215,4 +225,18 @@ section.hero {
     100% {
         transform: translateY(-15rem);
     }
+}
+
+/* Media query para desktop */
+@media (min-width: 768px) {
+    section.hero {
+        flex-direction: row; /* Volta ao row no desktop */
+        justify-content: space-between;
+
+
+    & h1 div {
+        height: 5rem;
+        vertical-align:  bottom;
+    }
+}   
 }

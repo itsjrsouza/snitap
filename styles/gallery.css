@@ -1,15 +1,14 @@
 section.gallery {
     width: 100%;
-    max-width: 80rem;
-    padding: 2.5rem 2rem;
+    padding: 1.5rem;
     margin-inline: auto;
 
     & header {
         text-align: center;
-    }
 
-    & header span {
-        font: 500 var(--text-sm) / 1.5 var(--font-family-base);
+        & span {
+            font: 500 var(--text-sm) / 1.5 var(--font-family-base);
+        }
     }
 
     & img {
@@ -18,13 +17,10 @@ section.gallery {
     }
 
     & .content {
-        margin-top: 2rem;
-        display: grid;
-        grid-template-areas: 
-        'A B B'
-        'C C D';
-
-        gap: 2.5rem;
+        margin-top: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
     }
 
     & figure {
@@ -37,13 +33,13 @@ section.gallery {
         animation-timeline: view();
         animation-range: 100px 300px;
 
-
         &[data-delay] {
             animation-range: 150px 350px;
         }
 
         & > img {
-            height: 25rem;
+            width: 100%; /* Alterado para 100% para preencher o figure */
+            height: 312px;
             object-fit: cover;
             transition: scale 500ms;
         }
@@ -53,29 +49,13 @@ section.gallery {
                 scale: 1.1;
             }
 
-            figcaption {
+            & figcaption {
                 transform: translateY(0);
             }
         }
         
-        &:nth-child(1) {
-            grid-area: A;
-        }
-
-        &:nth-child(2) {
-            grid-area: B;
-        }
-
-        &:nth-child(3) {
-            grid-area: C;
-        }
-
-        &:nth-child(4) {
-            grid-area: D;
-        }
     }
     
-
     & figcaption {
         display: flex;
         align-items: center;
@@ -113,5 +93,43 @@ section.gallery {
     from {
         opacity: 0;
         transform: translateY(100%);
+    }
+}
+
+/* Media query para desktop */
+@media (min-width: 768px) {
+    section.gallery {
+        max-width: 80rem;
+        padding: 2.5rem 2rem;
+
+        & .content {
+            margin-top: 2rem;
+            display: grid;
+            grid-template-areas: 
+            'A B B'
+            'C C D';
+            gap: 2.5rem;
+        }
+
+        & figure > img {
+            height: 25rem;
+            width: 100%;
+        }
+
+        & figure:nth-child(1) {
+            grid-area: A;
+        }
+
+        & figure:nth-child(2) {
+            grid-area: B;
+        }
+
+        & figure:nth-child(3) {
+            grid-area: C;
+        }
+
+        & figure:nth-child(4) {
+            grid-area: D;
+        }
     }
 }
