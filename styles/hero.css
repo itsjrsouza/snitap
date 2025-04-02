@@ -54,7 +54,6 @@ section.hero {
         margin-top: 3rem;
         flex-direction: column-reverse;
 
-
         & .button {
             display: flex;
             align-items: center;
@@ -230,13 +229,34 @@ section.hero {
 /* Media query para desktop */
 @media (min-width: 768px) {
     section.hero {
-        flex-direction: row; /* Volta ao row no desktop */
+        display: flex;
+        align-items: center;
         justify-content: space-between;
+        overflow: hidden;
 
+        flex-direction: row;
+    
+        max-width: 80rem;
+        width: 100%;
+        padding: 2.5rem 2rem;
+        margin-inline: auto;
+
+        & > div:nth-child(1) {
+            display: flex;    
+            max-width: 40rem;
+        }
 
     & h1 div {
         height: 5rem;
         vertical-align:  bottom;
     }
-}   
+
+    & .buttons {
+        display: flex;
+        gap: 2rem;
+        margin-top: 3rem;
+
+        flex-direction: row;
+    }
+}
 }
